@@ -120,6 +120,7 @@ export default class Toast extends Component {
             toValue: opacity,
             duration: fadeInDuration,
             easing: Easing.out(Easing.linear),
+            useNativeDriver: true
         }).start(() => {
             if (tmpDuration !== Duration.infinite) {
                 this.timer = setTimeout(() => {
