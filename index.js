@@ -196,6 +196,7 @@ export default class Toast extends Component {
                 toValue: 0,
                 duration: fadeOutDuration,
                 easing: Easing.out(Easing.linear),
+                useNativeDriver: true
             }).start(() => {
                 this.show();
                 this._initVariate();
